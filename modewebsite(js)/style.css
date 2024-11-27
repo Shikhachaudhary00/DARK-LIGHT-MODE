@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:var(--primary--color);
+    color: var(--third--color)
+}
+:root{
+    
+
+    --primary--color: #fff; 
+    --secondary--color:#f4b400;
+    --third--color:black;
+
+    
+
+}
+
+    
+.dark-theme{
+--primary--color: black;
+    --secondary--color:#f4b400;
+    --third--color:#fff; 
+}
+
+.hero {
+    background-color:var(--primary--color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav h3 {
+    margin: 0;
+    color:var(--secondary--color);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--third--color);
+    margin-right: 40px;
+}
+
+nav ul li:hover {
+    background-color: var(--secondary--color);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--primary--color);
+    text-align: center;
+    align-items: center;
+    width: 90px;
+}
+
+.info {
+    display: flex; /* Added flexbox to align text and image */
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Push image to the right */
+    max-width: 1000px; /* Set a max width */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 10px;
+}
+
+.info .text {
+    max-width: 50%; /* Limit text width to half */
+}
+
+.info h1 {
+    font-size: 2.9rem;
+    margin-top: 1px;
+    width: 10px;
+    color: var(--third--color);
+}
+
+.info span {
+    color: var(--secondary--color); /* Highlight color */
+}
+.info p{
+    text-align: left;
+    color: var(--third--color);
+    font-style: italic;
+    font-weight: 700;
+}
+
+img {
+    max-width: 30%; /* Image takes up to 40% of the container width */
+    border-radius: 10px;
+    object-fit: cover;
+}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .info {
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center; /* Center text */
+    }
+
+    .info .text, 
+    .info img {
+        max-width: 100%; /* Make text and image take full width */
+    }
+
+    img {
+        margin-top: 20px; /* Add space between text and image */
+    }
+}
+
+@media (max-width: 480px) {
+    .info h1 {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 10px;
+    }
+
+    nav ul li a {
+        margin-right: 0; /* Remove margin for stacked links */
+    }
+}
+.img{
+    width: 2%;
+    cursor: pointer;
+}
+
